@@ -45,6 +45,7 @@
       <img src="@/assets/sushi_res1.png" alt="sushi res1" id = "img_res1">
       <img src="@/assets/sushi_res2.png" alt="sushi res2" id = "img_res2">
     </div>
+    <footer-sushi/>
   </div>
 </template>
 
@@ -53,9 +54,10 @@
 
 import {defineComponent} from "vue";
 import PinkButton from "@/components/General/PinkButton.vue";
+import FooterSushi from "@/components/General/FooterSushi.vue";
 
 export default defineComponent({
-  components: {PinkButton}
+  components: {FooterSushi, PinkButton}
 })
 </script>
 
