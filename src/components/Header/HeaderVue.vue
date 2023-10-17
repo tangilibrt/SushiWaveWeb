@@ -89,4 +89,8 @@ a {
   cursor: pointer;
 }
 
+@media screen and (width < 400px) {
+
+}
+
 </style>

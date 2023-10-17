@@ -6,8 +6,9 @@
       <rect x = '8' y = '7' width = "221" height = "47" stroke="transparent" stroke-width="1" class="rec3"/>
 
     </svg>
-
-    <a>{{ this.text }}</a>
+    <router-link :to="'/'+this.link">
+      <a>{{ this.text }}</a>
+    </router-link>
   </div>
 </template>
 

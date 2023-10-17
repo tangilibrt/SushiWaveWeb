@@ -164,5 +164,13 @@ a {
   text-transform: lowercase;
 }
 
+@media screen and (width < 400px){
+  .footerContainer {
+    height: fit-content;
+  }
+  .restaurants {
+    flex-direction: column;
+  }
+}
 
 </style>

@@ -5,7 +5,6 @@
         <ItemCard :sushi-name="sushi.name" :sushi-description="sushi.description" :sushi-price="sushi.price" :sushi-pic="sushi.image" @imageLoaded="image-Loaded" />
       </div>
     </section>
-    <loader-component v-if="isLoading" />
   </div>
 </template>
 
@@ -13,11 +12,10 @@
 
 import categories from "@/menuItems.json";
 import ItemCard from "@/components/Menu/ItemCard.vue";
-import LoaderComponent from "@/components/General/LoaderComponent.vue";
 
 export default {
   name: 'ItemCategory',
-  components: {LoaderComponent, ItemCard},
+  components: { ItemCard},
   props: {
     category: String,
   },

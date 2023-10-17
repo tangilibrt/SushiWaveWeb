@@ -4,7 +4,7 @@
       <img src="@/assets/home.png" alt="Home page background image" id = "first_image"/>
       <h1 id="homeTitle">Le Lorem Ipsum Est Simplement</h1>
       <p>Home page content</p>
-      <PinkButton id="first_button" text="Découvrir" link="/nosrestaurants"/>
+      <PinkButton id="first_button" text="Découvrir" link="nosrestaurants"/>
     </div>
     <div id = firstBlackRectangle>
 <!--      <img src="@/assets/waves.png" alt="waves" id = "first_waves"/>-->
@@ -29,7 +29,7 @@
     </div>
     <div id = "thirdBlackRectangle">
       <div class="section section2">
-        <p class = "sectionText">
+        <p class = "sectionText sectionText2">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam .malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam .malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
         </p>
         <PinkButton id="third_button" text="Découvrir" link="/nosrestaurants"/>
@@ -37,14 +37,7 @@
       <img src="@/assets/sushi_baguettes.png" alt="sushi baguettes" id = "sushi_baguette">
     </div>
     <img src="@/assets/sushi_rose.png" alt="sushi rose" id = "sushi_rose">
-    <div id="reservation_rectangle">
-      <h3 class="sectionTitle reservationTitle">
-        Réserver
-        <a class="golden">&nbsp;Une Table</a>
-      </h3>
-      <img src="@/assets/sushi_res1.png" alt="sushi res1" id = "img_res1">
-      <img src="@/assets/sushi_res2.png" alt="sushi res2" id = "img_res2">
-    </div>
+    <ReservationRect/>
     <footer-sushi/>
   </div>
 </template>
@@ -55,9 +48,10 @@
 import {defineComponent} from "vue";
 import PinkButton from "@/components/General/PinkButton.vue";
 import FooterSushi from "@/components/General/FooterSushi.vue";
+import ReservationRect from "@/components/General/ReservationRect.vue";
 
 export default defineComponent({
-  components: {FooterSushi, PinkButton}
+  components: {FooterSushi, PinkButton, ReservationRect},
 })
 </script>
 
@@ -118,6 +112,7 @@ export default defineComponent({
   width: 100.1%;
   height: 80.462vh;
   background-color: #000;
+  overflow: hidden;
 }
 
 #first_waves {
@@ -269,46 +264,94 @@ export default defineComponent({
   width: auto;
 }
 
-#reservation_rectangle {
-  position: relative;
-  min-height: 100vh;
-  background-color: black;
-}
-
-.reservationTitle {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#img_res1 {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  max-width: 447px;
-  max-height: 559px;
-  height: auto;
-  width: auto;
-}
-
-#img_res2 {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
-  max-width: 408px;
-  max-height: 612px;
-  height: auto;
-  width: auto;
-}
-
 @font-face {
   font-family: 'motion_picture';
   src: url("MotionPicture_PersonalUseOnly.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@media screen and (width < 400px) {
+  * {
+    overflow-x: hidden;
+  }
+  #homeTitle {
+    font-size: 95px;
+  }
+
+  #first_button {
+    width: 250px;
+    height: 70px;
+  }
+
+  #firstBlackRectangle {
+    height: 750px;
+  }
+  #scndTitle {
+    top: 20%;
+    font-size: 60px;
+    width: 90vw;
+    height: 150px;
+  }
+  #scndText {
+    top: 45%;
+    width: 80vw;
+    height: 200px;
+  }
+  #palmier {
+    top: 110%;
+    height: 20vh;
+  }
+  #scnd_button {
+    width: 250px;
+    height: 70px;
+    top: 60%;
+  }
+  #scndBlackRectangle {
+    flex-direction: column;
+  }
+  #sushi_bol {
+    padding: 10%;
+  }
+
+  .sectionTitle {
+    font-size: 50px;
+    height: 100px;
+    line-height: 100%;
+    margin-left: 30px;
+  }
+  .sectionText {
+    width: 80vw;
+    height: 400px;
+    margin-left: 30px;
+    font-size: 16px;
+  }
+  #third_button {
+    padding-left: 297px;
+    padding-top: 100px;
+  }
+  #thirdBlackRectangle {
+    flex-direction: column-reverse;
+    padding-bottom: 90px;
+  }
+  #sushi_baguette {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    right: 0;
+    height: fit-content;
+  }
+  .section2 {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #sushi_rose {
+    height: 300px;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
 }
 
 </style>
