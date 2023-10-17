@@ -1,0 +1,164 @@
+{
+  "categories": {
+    "recommandations": {
+      "sushi1" : {
+        "name": "AVOCAT TOBBIKKO FROMAGE LAITUE",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.",
+        "price": 10,
+        "image": "/menu/maki/AVOCAT_TOBBIKKO_FROMAGE_LAITUE.jpg"
+      },
+      "sushi2" : {
+          "name": "Sushi",
+          "description": "Sushi",
+          "price": 10,
+          "image": "logo.png"
+      },
+      "sushi3" : {
+          "name": "Sushi",
+          "description": "Sushi",
+          "price": 10,
+          "image": "logo.png"
+      },
+      "sushi4" : {
+          "name": "Sushi",
+          "description": "Sushi",
+          "price": 10,
+          "image": "logo.png"
+      },
+      "sushi5" : {
+          "name": "Sushi",
+          "description": "Sushi",
+          "price": 10,
+          "image": "logo.png"
+      }
+    },
+    "menus" : {
+      "menu1" : {
+        "name": "Express 1",
+        "description": "Menu",
+        "price": 10,
+        "image": "/menu/menus/MENU_EXPRESS_1.jpg"
+      },
+      "menu2" : {
+          "name": "Express 2",
+          "description": "Menu",
+          "price": 10,
+          "image": "/menu/menus/EXPRESS_2.jpg"
+      },
+      "menu3" : {
+          "name": "Express 3",
+          "description": "Menu",
+          "price": 10,
+          "image": "/menu/menus/EXPRESS_3.jpg"
+      },
+      "menu4" : {
+          "name": "Express 5",
+          "description": "Menu",
+          "price": 10,
+          "image": "/menu/menus/EXPRESS_5.jpg"
+      },
+      "menu5" : {
+          "name": "Express 6",
+          "description": "Menu",
+          "price": 10,
+          "image": "/menu/menus/EXPRESS_6_.jpg"
+      },
+      "menu6" : {
+          "name": "Medium Fiesta",
+          "description": "Menu",
+          "price": 10,
+          "image": "/menu/menus/MEDIUM_FIESTA.jpg"
+      },
+        "menu7" : {
+            "name": "Plateau Fiesta",
+            "description": "Menu",
+            "price": 10,
+            "image": "/menu/menus/PLATEAU_FIESTA.jpg"
+        },
+        "menu8" : {
+            "name": "Menu Big Fiesta",
+            "description": "Menu",
+            "price": 10,
+            "image": "/menu/menus/MENU_BIG_FIESTA-2.jpg"
+        }
+    },
+    "sushis" : {
+      "sushi1" : {
+        "name": "Sushi Marlin Braisé",
+        "description": "Sushi",
+        "price": 10,
+        "image": "/menu/sushi/Sushi_marlin_braisé.jpg"
+        },
+      "sushi2" : {
+        "name": "Sushi Saumon Anguille",
+        "description": "Sushi",
+        "price": 10,
+        "image": "/menu/sushi/Sushi_saumon_anguille.jpg"
+      },
+      "sushi3" : {
+        "name": "Sushi Saumon braisé",
+        "description": "Sushi",
+        "price": 10,
+        "image": "/menu/sushi/Sushi_saumon_braisé.jpg"
+      },
+      "sushi4" : {
+        "name": "Sushi Thon Braisé",
+        "description": "Sushi",
+        "price": 10,
+        "image": "/menu/sushi/Sushi_thon_braisé.jpg"
+      }
+    },
+    "makis" : {
+        "maki1" : {
+            "name": "Avocat Tobikko Fromage Laitue",
+            "description": "Maki",
+            "price": 10,
+            "image": "/menu/maki/AVOCAT_TOBBIKKO_FROMAGE_LAITUE.jpg"
+        },
+        "maki2" : {
+            "name": "Crevette Tobikko Laitue",
+            "description": "Maki",
+            "price": 10,
+            "image": "/menu/maki/CREVETTE_TOBBIKKO_LAITUE-4.jpg"
+        },
+        "maki3" : {
+            "name": "California Avocat Saumon",
+            "description": "Maki",
+            "price": 10,
+            "image": "/menu/maki/CALIFORNIA_AVOCAT_SAUMON-3.jpg"
+        },
+        "maki4" : {
+            "name": "California Avocat Crabe",
+            "description": "Maki",
+            "price": 10,
+            "image": "/menu/maki/MAKI_CALIFORNIA_AVOCAT_CRABE-0030.jpg"
+        },
+        "maki5": {
+          "name": "Maki Avocat",
+          "description": "Maki",
+          "price": 10,
+          "image": "/menu/maki/MAKI_AVOCAT-3.jpg"
+        },
+        "maki6" : {
+            "name": "Maki Saumon",
+            "description": "Maki",
+            "price": 10,
+            "image": "/menu/maki/MAKI_SAUMON-4.jpg"
+        },
+        "maki7" : {
+            "name": "Maki Concombre",
+            "description": "Maki",
+            "price": 10,
+            "image": "/menu/maki/MAKI_CONCOMBRE-5.jpg"
+        },
+        "maki8" : {
+            "name": "Maki Thon",
+            "description": "Maki",
+            "price": 10,
+            "image": "/menu/maki/MAKI_THON-4.jpg"
+        }
+
+
+    }
+  }
+}
