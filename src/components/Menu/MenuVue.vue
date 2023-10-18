@@ -1,7 +1,7 @@
 <template>
   <div class="containerMenu">
     <div class="containerMenuTitle">
-      <img src="@/assets/menu/bgMenu.png" alt="bgMenu" id="first_image">
+      <img src="../../../public/menu/bgMenu.png" alt="bgMenu" id="first_image">
       <h1 id="menu_title">Notre carte</h1>
     </div>
     <div class="containerMenuCategories">
