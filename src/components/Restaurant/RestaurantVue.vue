@@ -8,7 +8,7 @@
     <div class="about">
       <img src="@/assets/restaurants/waves.png" alt="waves" id="waves">
       <h2 class="sectionRestaurantTitle">À propos</h2>
-      <a class="sectionText">
+      <a class="sectionTextR">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam
         .malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</a>
     </div>
@@ -155,7 +155,7 @@ h1 {
   right: 0;
 }
 
-.sectionText {
+.sectionTextR {
   position: relative;
   z-index: 1;
   text-align: start;
