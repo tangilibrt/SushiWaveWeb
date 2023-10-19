@@ -8,10 +8,14 @@
         <a>Réserver</a>
     </div>
   </div>
+  <div class="headerContainerMobile">
+    <HeaderMobileVue/>
+  </div>
 </template>
 
 <script setup>
 
+import HeaderMobileVue from "@/components/Header/HeaderMobileVue.vue";
 </script>
 
 <style scoped>
@@ -89,8 +93,23 @@ a {
   cursor: pointer;
 }
 
-@media screen and (width < 400px) {
+@media screen and (width > 649px){
+  .headerContainerMobile{
+    display: none;
+  }
+  .headerContainer {
+    display: flex;
+  }
 
+}
+
+@media screen and (width < 650px) {
+  .headerContainerMobile{
+    display: block;
+  }
+  .headerContainer{
+    display: none;
+  }
 }
 
 </style>

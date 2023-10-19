@@ -271,7 +271,7 @@ export default defineComponent({
   font-style: normal;
 }
 
-@media screen and (width < 400px) {
+@media screen and (width < 550px) {
   * {
     overflow-x: hidden;
   }
