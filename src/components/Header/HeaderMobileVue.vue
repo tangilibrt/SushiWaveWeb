@@ -27,6 +27,9 @@ export default {
         </li>
       </ul>
     </div>
+    <div class="logoMobile">
+      <img src="@/assets/logoLettre.svg" alt="logo" id="logoMobile">
+    </div>
   </nav>
 
 
@@ -47,6 +50,16 @@ html {
 /**Mobile (Hamburger-)Menu from here on**/
 
 /** This is kind of a styled trigger here **/
+.logoMobile {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  width: auto;
+  height: 30px;
+  background: transparent;
+  z-index: 10;
+}
+
 #menuToggle
 {
   display: block;
