@@ -54,10 +54,12 @@ html {
   position: absolute;
   top: 30px;
   right: 25px;
-  width: auto;
-  height: 30px;
   background: transparent;
   z-index: 10;
+}
+
+#logoMobile {
+  height: 50px;
 }
 
 #menuToggle
