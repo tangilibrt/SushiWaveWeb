@@ -85,6 +85,7 @@ export default defineComponent({
   z-index: 1;
   top: 40%;
   left: 50%;
+  min-height: 350px;
   height: fit-content;
   min-width: 300px;
   transform: translate(-50%, -50%);
