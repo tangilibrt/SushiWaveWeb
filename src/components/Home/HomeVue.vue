@@ -279,7 +279,7 @@ export default defineComponent({
     overflow-x: hidden;
   }
   #homeTitle {
-    font-size: 95px;
+    font-size: 85px;
   }
 
   #first_button {
