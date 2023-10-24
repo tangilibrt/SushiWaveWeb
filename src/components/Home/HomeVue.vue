@@ -282,6 +282,7 @@ export default defineComponent({
     font-size: 95px;
     top: 50%;
     height: 500px;
+    text-align: center;
   }
 
   #first_button {
