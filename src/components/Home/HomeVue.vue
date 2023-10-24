@@ -277,6 +277,7 @@ export default defineComponent({
 @media screen and (width < 550px) {
   * {
     overflow-x: hidden;
+    line-height: 100%;
   }
   #homeTitle {
     font-size: 95px;
