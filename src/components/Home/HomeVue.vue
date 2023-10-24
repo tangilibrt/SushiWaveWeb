@@ -281,7 +281,7 @@ export default defineComponent({
   #homeTitle {
     font-size: 95px;
     top: 50%;
-    overflow-y: visible;
+    padding-bottom: 0;
   }
 
   #first_button {
