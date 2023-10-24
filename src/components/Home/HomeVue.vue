@@ -276,8 +276,7 @@ export default defineComponent({
 
 @media screen and (width < 550px) {
   * {
-    overflow-x: hidden;
-    line-height: 100%;
+    overflow: hidden;
   }
   #homeTitle {
     font-size: 95px;
@@ -298,6 +297,8 @@ export default defineComponent({
     font-size: 60px;
     width: 90vw;
     height: 150px;
+    line-height: 100%;
+
   }
   #scndText {
     top: 45%;
