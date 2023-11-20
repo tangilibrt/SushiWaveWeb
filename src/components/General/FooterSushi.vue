@@ -166,8 +166,7 @@ a {
 
 @media screen and (width < 550px){
   .footerContainer {
-    height: 1200px;
-
+    min-height: 1500px;
   }
   .restaurants {
     flex-direction: column;
