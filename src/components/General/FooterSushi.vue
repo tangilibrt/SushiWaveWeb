@@ -175,7 +175,7 @@ a {
   }
   .restaurant1, .restaurant2, .restaurant3 {
     width: 80vw;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .realFooter {
     height: 250px;
