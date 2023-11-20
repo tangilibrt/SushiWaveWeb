@@ -164,12 +164,26 @@ a {
   text-transform: lowercase;
 }
 
-@media screen and (width < 400px){
+@media screen and (width < 550px){
   .footerContainer {
-    height: fit-content;
+    height: 1500px;
+
   }
   .restaurants {
     flex-direction: column;
+    justify-content: normal;
+  }
+  .restaurant1, .restaurant2, .restaurant3 {
+    width: 80vw;
+    margin-bottom: 30px;
+  }
+  .realFooter {
+    margin-top: 200px;
+    height: 250px;
+  }
+  .footerInfo {
+    flex-direction: column;
+    height: 200px;
   }
 }
 

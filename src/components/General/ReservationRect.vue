@@ -58,7 +58,7 @@
   color: rgba(255, 201, 148, 0.80);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (width < 550px) {
   #img_res1, #img_res2 {
     opacity: 0;
   }
@@ -66,6 +66,9 @@
     font-size: 50px;
     width: 80vw;
     top: 10%;
+  }
+  #reservation_rectangle {
+    min-height: 60vh;
   }
 }
 

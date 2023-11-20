@@ -321,17 +321,21 @@ export default defineComponent({
     padding: 10%;
   }
 
+  .section {
+  }
+
   .sectionTitle {
     font-size: 50px;
     height: 100px;
     line-height: 100%;
-    margin-left: 30px;
+    margin-left: 5vw;
   }
   .sectionText {
-    width: 80vw;
-    height: 400px;
-    margin-left: 30px;
+    width: 90vw;
+    height: 350px;
+    margin-left: 5vw;
     font-size: 16px;
+    text-transform: uppercase;
   }
   #third_button {
     padding-left: 297px;
@@ -342,7 +346,7 @@ export default defineComponent({
     padding-bottom: 90px;
   }
   #sushi_baguette {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     width: 100%;
     right: 0;
@@ -358,6 +362,7 @@ export default defineComponent({
     left: 50%;
     transform: translate(-50%, 0);
   }
+
 
 }
 
