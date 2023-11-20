@@ -166,7 +166,7 @@ a {
 
 @media screen and (width < 550px){
   .footerContainer {
-    height: 1500px;
+    height: 1350px;
 
   }
   .restaurants {
