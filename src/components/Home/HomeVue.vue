@@ -294,9 +294,9 @@ export default defineComponent({
   }
   #scndTitle {
     top: 20%;
-    font-size: 60px;
+    max-font-size: 60px;
     width: 90vw;
-    min-height: 150px;
+    height: 150px;
     line-height: 100%;
 
   }
