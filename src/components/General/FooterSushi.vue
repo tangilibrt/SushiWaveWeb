@@ -166,7 +166,7 @@ a {
 
 @media screen and (width < 550px){
   .footerContainer {
-    height: 1350px;
+    height: 1500px;
 
   }
   .restaurants {
@@ -178,7 +178,6 @@ a {
     margin-bottom: 30px;
   }
   .realFooter {
-    margin-top: 200px;
     height: 250px;
   }
   .footerInfo {
