@@ -68,7 +68,7 @@
     top: 10%;
   }
   #reservation_rectangle {
-    min-height: 60vh;
+    min-height: 600px;
   }
 }
 

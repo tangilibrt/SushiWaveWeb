@@ -166,7 +166,7 @@ a {
 
 @media screen and (width < 550px){
   .footerContainer {
-    height: 1500px;
+    height: 1200px;
 
   }
   .restaurants {
@@ -175,13 +175,15 @@ a {
   }
   .restaurant1, .restaurant2, .restaurant3 {
     width: 80vw;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .realFooter {
+    margin-top: 200px;
     height: 250px;
   }
   .footerInfo {
     flex-direction: column;
+    justify-content: normal;
     height: 200px;
   }
 }
