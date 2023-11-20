@@ -280,7 +280,7 @@ export default defineComponent({
   }
   #homeTitle {
     font-size: 85px;
-    top: 40%;
+    top: 50%;
     line-height: 100%;
   }
 
