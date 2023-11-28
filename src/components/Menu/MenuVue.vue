@@ -369,6 +369,7 @@ button {
     max-width: 100%;
     justify-content: flex-start;
   }
+
 }
 
 </style>
