@@ -122,6 +122,12 @@ export default {
   .price {
     font-size: 14px;
   }
+  svg {
+    width: 80vw;
+  }
+  rect {
+    width: 80vw;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&display=swap');
