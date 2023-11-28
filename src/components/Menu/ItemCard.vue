@@ -107,7 +107,7 @@ export default {
 
 @media screen and (max-width: 550px) {
   .itemSushiContainer {
-    transform: scale(0.5);
+    transform: scale(0.6);
   }
 
 }
