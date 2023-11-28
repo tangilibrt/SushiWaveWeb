@@ -107,21 +107,24 @@ export default {
 
 @media screen and (max-width: 550px) {
   .itemSushiContainer {
-    width: 80vw;
+    transform: scale(0.5);
   }
-  .textSushi {
-    width: 28%;
-  }
-  .sushiTitle {
-    font-size: 18px;
-    margin-bottom: 3px;
-  }
-  .sushiDescription {
-    font-size: 10px;
-  }
-  .price {
-    font-size: 14px;
-  }
+  //.itemSushiContainer {
+  //  width: 80vw;
+  //}
+  //.textSushi {
+  //  width: 28%;
+  //}
+  //.sushiTitle {
+  //  font-size: 18px;
+  //  margin-bottom: 3px;
+  //}
+  //.sushiDescription {
+  //  font-size: 10px;
+  //}
+  //.price {
+  //  font-size: 14px;
+  //}
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&display=swap');
