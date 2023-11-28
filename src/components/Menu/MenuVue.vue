@@ -346,4 +346,25 @@ button {
   background-color: black;
 }
 
+@media screen and (width < 550px) {
+  .containerMenu {
+    overflow-x: hidden;
+  }
+  .containerMenuTitle {
+    height: 500px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #first_image {
+    height: 100%;
+    width: auto;
+  }
+  .categories {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+}
+
 </style>
