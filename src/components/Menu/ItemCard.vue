@@ -105,7 +105,7 @@ export default {
   font-weight: 900;
 }
 
-@media screen and (width < 550px)  {
+@media screen and (max-width: 550px) {
   .itemSushiContainer {
     width: 80vw;
   }
@@ -116,14 +116,14 @@ export default {
     font-size: 18px;
     margin-bottom: 3px;
   }
-  .sushiDescription{
+  .sushiDescription {
     font-size: 10px;
   }
   .price {
     font-size: 14px;
   }
-  svg {
-    width: 80vw;
+  svg.sushi-rec {
+    width: 80vw; /* Adjust the width as needed */
   }
   rect {
     width: 80vw;
