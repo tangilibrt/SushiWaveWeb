@@ -122,12 +122,6 @@ export default {
   .price {
     font-size: 14px;
   }
-  svg.sushi-rec {
-    width: 80vw; /* Adjust the width as needed */
-  }
-  rect {
-    width: 80vw;
-  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&display=swap');
