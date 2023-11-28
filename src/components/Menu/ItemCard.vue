@@ -107,7 +107,7 @@ export default {
 
 @media screen and (width < 550px)  {
   .itemSushiContainer {
-    width: 80%;
+    width: 80vw;
   }
   .textSushi {
     width: 28%;
