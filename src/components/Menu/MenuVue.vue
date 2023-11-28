@@ -355,6 +355,10 @@ button {
     width: 100%;
     overflow-x: hidden;
   }
+  #menu_title {
+    padding-bottom: 0;
+  }
+
   #first_image {
     height: 100%;
     width: auto;
