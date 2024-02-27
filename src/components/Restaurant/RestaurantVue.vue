@@ -68,7 +68,16 @@ import ReservationRect from "@/components/General/ReservationRect.vue";
 import GalleryComponent from "@/components/Restaurant/GalleryComponent.vue";
 
 export default defineComponent({
-  components: {GalleryComponent, PinkButton, FooterSushi, ReservationRect}
+  components: {GalleryComponent, PinkButton, FooterSushi, ReservationRect},
+  metaInfo: {
+    title: 'Nos Restaurants - Sushi Wave',
+    meta: [
+      {
+        name: 'Nos Restaurants',
+        content: 'Page présentant les différents restaurants de Sushi Wave.'
+      }
+    ]
+  }
 })
 </script>
 

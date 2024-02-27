@@ -91,6 +91,15 @@ import FooterSushi from "@/components/General/FooterSushi.vue";
 
 export default {
   components: {FooterSushi, ItemCategory},
+  metaInfo: {
+    title: 'Notre Carte - Sushi Wave',
+    meta: [
+      {
+        name: 'Notre Carte',
+        content: 'Page présentant la carte du restaurant Sushi Wave, rangée par catégories.'
+      }
+    ]
+  },
   methods: {
     showCategory(category) {
       this.selectedCategory = {

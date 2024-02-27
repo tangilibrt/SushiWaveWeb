@@ -52,6 +52,15 @@ import ReservationRect from "@/components/General/ReservationRect.vue";
 
 export default defineComponent({
   components: {FooterSushi, PinkButton, ReservationRect},
+  metaInfo: {
+    title: 'Accueil - Sushi Wave',
+    meta: [
+      {
+        name: 'Page d\'accueil',
+        content: 'Page d\'accueil du site Sushi Wave présentant les différentes activités du restaurant.'
+      }
+    ]
+  }
 })
 </script>
 
