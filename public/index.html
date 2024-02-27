@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>Sushi Wave Martinique - <%= BASE_URL %></title>
-  </head>
-  <body style="overflow-x: hidden">
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <title>Sushi Wave Martinique - {{ pageTitle }}</title> <!-- Utilisation de la variable pageTitle -->
+</head>
+<body style="overflow-x: hidden">
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script>
+    // Récupération du nom de la page actuelle à partir de l'URL
+    const currentPage = window.location.pathname.split('/').pop();
+
+    // Création de l'instance de l'application Vue.js
+    const app = new Vue({
+        el: '#app',
+        data: {
+            pageTitle: currentPage ? `${currentPage.charAt(0).toUpperCase()}${currentPage.slice(1)}` : 'Home', // Mise à jour de la variable pageTitle
+        }
+    });
+</script>
+</body>
 </html>
