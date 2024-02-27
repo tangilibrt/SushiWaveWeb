@@ -1,4 +1,8 @@
 <template>
+  <head>
+    <title>Notre Carte - Sushi Wave</title>
+    <meta name="Notre Carte" content="Page présentant la carte du restaurant Sushi Wave, rangée par catégories.">
+  </head>
   <div class="containerMenu">
     <div class="containerMenuTitle">
       <img src="../../../public/menu/bgMenu.png" alt="bgMenu" id="first_image">
@@ -91,15 +95,7 @@ import FooterSushi from "@/components/General/FooterSushi.vue";
 
 export default {
   components: {FooterSushi, ItemCategory},
-  metaInfo: {
-    title: 'Notre Carte - Sushi Wave',
-    meta: [
-      {
-        name: 'Notre Carte',
-        content: 'Page présentant la carte du restaurant Sushi Wave, rangée par catégories.'
-      }
-    ]
-  },
+
   methods: {
     showCategory(category) {
       this.selectedCategory = {

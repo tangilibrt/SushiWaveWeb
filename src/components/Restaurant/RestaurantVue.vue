@@ -1,4 +1,8 @@
 <template>
+  <head>
+    <title>Nos Restaurants - Sushi Wave</title>
+    <meta name="Nos Restaurants" content="Page présentant les différents restaurants de Sushi Wave.">
+  </head>
   <div class="restaurantPageContainer">
     <div class="restaurantTitle">
       <img src="@/assets/restaurants/mainImage.png" alt="Title Image" id="first_image">
@@ -69,15 +73,6 @@ import GalleryComponent from "@/components/Restaurant/GalleryComponent.vue";
 
 export default defineComponent({
   components: {GalleryComponent, PinkButton, FooterSushi, ReservationRect},
-  metaInfo: {
-    title: 'Nos Restaurants - Sushi Wave',
-    meta: [
-      {
-        name: 'Nos Restaurants',
-        content: 'Page présentant les différents restaurants de Sushi Wave.'
-      }
-    ]
-  }
 })
 </script>
 
