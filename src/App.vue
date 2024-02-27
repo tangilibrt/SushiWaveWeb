@@ -13,32 +13,11 @@ export default {
   components: {
     HeaderVue,
   },
-  data() {
-    return {
-      currentPage: ''
-    };
-
-  },
-  watch:
-    {
-      // Update the currentPage variable when the route changes
-      $route() {
-        this.currentPage = this.$route().name || 'Accueil';
-      },
-      pageTitle() {
-        // Update the page title when pageTitle changes
-        document.title = this.pageTitle; // Update the page title when pageTitle changes
-      }
-    },
-  created() {
-    // Set currentPage when the component is created
-    this.currentPage = this.$route().name || 'Accueil';
-  },
-  computed: {
-    pageTitle() {
-      return `Sushi Wave Martinique - ${this.currentPage}`; // Computed property for page title
+  watch: {
+    $route(to) {
+      document.title = `Sushi Wave Martinique - ${to.name || 'Home'}`;
     }
-  },
+  }
 }
 </script>
 
