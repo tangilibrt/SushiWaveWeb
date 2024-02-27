@@ -15,7 +15,14 @@ export default {
   },
   watch: {
     $route(to) {
-      document.title = `Sushi Wave Martinique - ${to.name || 'Home'}`;
+      if (to.name === 'home')
+        document.title = 'Sushi Wave Martinique - Page d\'Accueil';
+      else if (to.name === 'menu')
+        document.title = 'Sushi Wave Martinique - Notre Carte';
+      else if (to.name === 'nosrestaurants')
+        document.title = 'Sushi Wave Martinique - Nos Restaurants';
+      else
+      document.title = `Sushi Wave Martinique - ${to.name || 'Page d\'Accueil'}`;
     }
   }
 }
