@@ -9,9 +9,9 @@
       <h1 id="menu_title">Notre carte</h1>
     </div>
     <div class="containerMenuCategories">
+      <button class="prvButton" @click="prvCat"><img src="/gallery/arrow-left.svg" alt="fleche gauche" class="arrow"></button>
       <div class="categories">
         <div class="recCat">
-
           <button class="category recommandations" v-on:click="showCategory('recommandations')">recommandations</button>
 
           <svg width="100%" height="61" viewBox="0 0 237 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="pinkRectrecommandations">
@@ -78,6 +78,7 @@
           <button class="category accompagnements" @click="showCategory('accompagnements')">accompagnements</button>
         </div>
       </div>
+      <button class="nxtButton" @click="nextCat"><img src="/gallery/arrow-right.svg" alt="fleche droite" class="arrow"></button>
     </div>
     <div class="sushiContainer">
       <ItemCategory v-if="selectedCategory" @close="showRecommandations = null" :title="selectedCategory.title" :category=selectedCategory.label />
@@ -95,6 +96,7 @@ import FooterSushi from "@/components/General/FooterSushi.vue";
 
 export default {
   components: {FooterSushi, ItemCategory},
+  // let scrollInterval;
 
   methods: {
     showCategory(category) {
@@ -115,11 +117,45 @@ export default {
 
 
     },
+    prvCat() {
+      const categories = document.getElementsByClassName("categories")[0];
+      // const prvButton = document.getElementsByClassName("prvButton")[0];
+
+      categories.scroll({
+        left: categories.scrollLeft - 200,
+        top: 0,
+        behavior: 'smooth'});
+      if (categories.scrollLeft === 0) {
+        const prevButton = document.getElementsByClassName("prvButton")[0];
+        prevButton.style.opacity = 0;}
+      else {
+        const prevButton = document.getElementsByClassName("prvButton")[0];
+        prevButton.style.opacity = 1;
+      }
+
+    },
+
+    nextCat() {
+      const categories = document.getElementsByClassName("categories")[0];
+      categories.scroll({
+        left: categories.scrollLeft + 200 ,
+        top: 0,
+        behavior: 'smooth'})
+
+    }
+
   },
   mounted() {
     this.showCategory("recommandations")
     const pinkRect = document.getElementsByClassName("pinkRectrecommandations")[0];
-    pinkRect.classList.toggle("show")
+    pinkRect.classList.toggle("show");
+    if (categories.scrollLeft === 0) {
+      const prevButton = document.getElementsByClassName("prvButton")[0];
+      prevButton.style.opacity = 0;}
+    else {
+      const prevButton = document.getElementsByClassName("prvButton")[0];
+      prevButton.style.opacity = 1;
+    }
   },
   data() {
     return {
@@ -140,6 +176,8 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .containerMenuTitle {
@@ -151,6 +189,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #first_image {
@@ -179,17 +219,7 @@ export default {
   flex-direction: row;
   background-color: black;
   justify-content: center;
-  .containerMenuCategories::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -30px;
-    height: 100%;
-    width: 30px;
-    background-color: black;
-    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5); /* Adjust shadow properties */
-    z-index: -1;
-  }
+
 }
 
 .recCat {
@@ -310,6 +340,7 @@ button {
   z-index: 1;
   border: none;
   background-color: transparent;
+  margin: 20px;
 }
 
 .arrow {
@@ -325,11 +356,19 @@ button {
 .categories {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  max-width: 70%;
-  flex-wrap: wrap;
+  //justify-content: center;
+  //max-width: 70%;
+  //flex-wrap: wrap;
   border: 1px solid black;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  max-width: 80%;
+  justify-content: flex-start;
+  transition: scrollLeft 0.5s;
 }
+
+
+
 
 .blur-box {
   background-color: #555;

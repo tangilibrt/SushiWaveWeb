@@ -3,7 +3,7 @@
     <title>Accueil - Sushi Wave</title>
     <meta name="Page d'accueil" content="Page d'accueil du site Sushi Wave présentant les différentes activités du restaurant.">
   </head>
-  <div id="home">
+  <div id="home" ref="homeRef">
     <div id="MainTitle">
       <img src="@/assets/home.png" alt="Home page background image" id = "first_image"/>
       <h1 id="homeTitle">Le Lorem Ipsum Est Simplement</h1>
@@ -56,8 +56,40 @@ import ReservationRect from "@/components/General/ReservationRect.vue";
 
 export default defineComponent({
   components: {FooterSushi, PinkButton, ReservationRect},
+  mounted() {
+    // Intersection Observer for the title
+    const elementTitle = this.$refs.homeRef.querySelector('#homeTitle');
+    // Intersection Observer for the 1st small title
+    const elementScndTitle = this.$refs.homeRef.querySelector('#scndTitle');
+
+    const options = { root: null, rootMargin: '0px', threshold: 1 };
+    // Observer for the title
+    const observerTitle = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          elementTitle.classList.add('animationTitle');
+        } else {
+          elementTitle.classList.remove('animationTitle');
+        }
+      });
+    });
+    // Observer for the 1st small title
+    const observerScndTitle = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          elementScndTitle.classList.add('animationTitle');
+        } else {
+          elementScndTitle.classList.remove('animationTitle');
+        }
+      });
+    });
+
+    observerTitle.observe(elementTitle, options);
+    observerScndTitle.observe(elementScndTitle, options);
+  }
 })
 </script>
+
 
 <style scoped>
 #home {
@@ -100,6 +132,11 @@ export default defineComponent({
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
+  transition: opacity 0.5s;
+}
+
+.animationTitle {
+  animation: apparitionTitle 1.5s ease-in-out forwards;
 }
 
 #first_button {
@@ -151,12 +188,12 @@ export default defineComponent({
   left: 50%;
   transform: translate(-50%, -50%);
   width: 39vw;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-family: Cinzel, sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 170%; /* 30.6px */
   letter-spacing: 0.36px;
   text-transform: uppercase;
@@ -219,7 +256,7 @@ export default defineComponent({
 
 .sectionText {
   display: flex;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.8);
   font-family: Cinzel, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -368,6 +405,15 @@ export default defineComponent({
   }
 
 
+}
+
+@keyframes apparitionTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 </style>
